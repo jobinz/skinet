@@ -1,24 +1,5 @@
 <app-nav-bar></app-nav-bar>
 
-<div class="container" style="margin-top: 140px;">
-    <h1>Welcome to {{ title }}</h1>
-
-
-    <div class="card-deck mb-3 text-center" *ngFor="let product of products">
-        <div class="card mb-4 box-shadow">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">{{product.name}}</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">{{product.price | currency:'INR'}}</h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li><img src="{{product.pictureUrl}}" style="max-height: 100px;"></li>
-                    <li>Type : {{product.productType}}</li>
-                    <li>Brand : {{product.productBrand}}</li>
-                    <li>Description : {{product.description}}</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Add to Cart</button>
-            </div>
-        </div>
-    </div>
+<div class="container" style="margin-top: 140px;">    
+    <app-shop></app-shop>
 </div>
