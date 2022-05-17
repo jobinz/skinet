@@ -1,10 +1,21 @@
-<ngx-spinner>
-    <h3>Loading...</h3>
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="small" color="#fff" [fullScreen]="true">
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        <span class="visually-hidden">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        <span class="visually-hidden">Loading...</span>
+    </button>
+    <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        Loading...
+    </button>
 </ngx-spinner>
 
 <app-nav-bar></app-nav-bar>
 <app-section-header></app-section-header>
 
-<div class="container">    
+<div>
     <router-outlet></router-outlet>
 </div>
